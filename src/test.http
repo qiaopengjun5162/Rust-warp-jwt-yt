@@ -1,0 +1,37 @@
+### Login
+POST http://localhost:8000/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "user@userland.com",
+    "pw": "1234"
+}
+
+### User user
+GET http://localhost:8000/user HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwicm9sZSI6IlVzZXIiLCJleHAiOjE2OTYwNjM1OTd9.aVMRjmRFk6L-_ZzzZ7xrMcs8p81nTVk2FoPQ3LAJOLsax15GOOAkH6VizfGgxYJ9cl-LqmK5SRmN1txIXx9HMA
+
+### User admin
+GET http://localhost:8000/admin HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwicm9sZSI6IlVzZXIiLCJleHAiOjE2OTYwNjM3NTN9.-QvYmJhYAn-pYo23BtR_ww2B9wS0uU5OeGCgl9E93qDvq5QpVx4i-w5bhwY3KJVIrJK9SKFRDb33zugCiJxMhw
+
+### Admin login
+POST http://localhost:8000/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "admin@adminaty.com",
+    "pw": "4321"
+}
+
+### Admin user
+GET http://localhost:8000/user HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwicm9sZSI6IkFkbWluIiwiZXhwIjoxNjk2MDYzODc1fQ.JSCQRkHpgDQcg_5VU4Seyncs84XxnItIzgJTdiB_zpFfad7S1OWhaq_6d4RLudBMUetsRFPFLH_w1aLJjFzvrQ
+
+### Admin admin
+GET http://localhost:8000/admin HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwicm9sZSI6IkFkbWluIiwiZXhwIjoxNjk2MDYzODc1fQ.JSCQRkHpgDQcg_5VU4Seyncs84XxnItIzgJTdiB_zpFfad7S1OWhaq_6d4RLudBMUetsRFPFLH_w1aLJjFzvrQ
